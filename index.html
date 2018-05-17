@@ -1,20 +1,172 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <title>SGP App</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar border border-primary">
+      <a class="navbar-brand" href="#"><img src="./images/github.png" alt="logo" class="img-thumbnail" /></a>
+      <ul class="navbar nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Collaborateurs</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Statistiques</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Activités</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <!-- Bouton Ajouter un nouveau collaborateur -->
+      <div class="row">
+        <div class="col text-right">
+          <button>Ajouter un nouveau collaborateur</button>
+        </div>
+      </div>
+      <!-- Titre -->
+      <div class="row">
+        <div class="col">
+          <h1>Les collaborateurs</h1>
+        </div>
+      </div>
+      <!-- Ligne 1 Formulaire de recherche -->
+      <div class="row">
+        <div class="col">
+          <p class="text-right">Rechercher un nom ou un prénom qui commence par :</p>
+        </div>
+        <div class="col">
+            <input type="search" /> <button>Rechercher</button>
+        </div>
+        <div class="col">
+          <input type="checkbox" />Voir les collaborateurs désactivés
+        </div>
+      </div>
+      <!-- Ligne 2 Formulaire de recherche -->
+      <div class="row">
+        <div class="col">
+          <p class="text-right">Filtrer par département :</p>
+        </div>
+        <div class="col">
+            <select>
+              <option selected>Tous</option>
+              <option>Comptabilité</option>
+              <option>Ressources humaines</option>
+              <option>Informatique</option>
+            </select>
+        </div>
+        <div class="col">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        </div>
+      </div>
+      <!-- Première ligne avec 3 collaborateurs -->
+      <div class="row">
+        <!-- Premier collaborateur -->
+        <div class="col border border-primary m-1 flex-fill">
+          <!-- Ligne NOM Prénom -->
+          <div class="row">
+            <div class="col">
+              TOLSTOI Léon
+            </div>
+          </div>
+          <!-- Ligne contenu -->
+          <div class="row border-top border-primary d-flex flex-nowrap">
+            <div class="col">
+              <img src="./images/mario.jpg" alt="mario" class="img-thumbnail" />
+            </div>
+            <div class="col">
+              <p>Fonction</p>
+              <p>Département</p>
+              <p>Email</p>
+              <p>Téléphone</p>
+            </div>
+            <div class="col">
+              <p>Manager</p>
+              <p>Ressources humaines</p>
+              <p>abs@pantheon.com</p>
+              <p>0476231201</p>
+            </div>
+          </div>
+          <!-- Ligne bouton editer -->
+          <div class="row">
+            <div class="col text-right">
+              <button>Editer</button>
+            </div>
+          </div>
+        </div>
+        <!-- Deuxième collaborateur -->
+        <div class="col border border-primary m-1 flex-fill">
+          <!-- Ligne NOM Prénom -->
+          <div class="row">
+            <div class="col">
+              Holst Gustave
+            </div>
+          </div>
+          <!-- Ligne contenu -->
+          <div class="row border-top border-primary d-flex flex-nowrap">
+            <div class="col">
+              <img src="./images/luigi.jpg" alt="luigi" class="img-thumbnail" />
+            </div>
+            <div class="col">
+              <p>Fonction</p>
+              <p>Département</p>
+              <p>Email</p>
+              <p>Téléphone</p>
+            </div>
+            <div class="col">
+              <p>Manager</p>
+              <p>Comptabilité</p>
+              <p>bcd@pantheon.com</p>
+              <p>0476231202</p>
+            </div>
+          </div>
+          <!-- Ligne bouton editer -->
+          <div class="row">
+            <div class="col text-right">
+              <button>Editer</button>
+            </div>
+          </div>
+        </div>
+        <!-- Troisième collaborateur -->
+        <div class="col border border-primary m-1 flex-fill">
+          <!-- Ligne NOM Prénom -->
+          <div class="row">
+            <div class="col">
+              Erik Satie
+            </div>
+          </div>
+          <!-- Ligne contenu -->
+          <div class="row border-top border-primary d-flex flex-nowrap">
+            <div class="col">
+              <img src="./images/yoshi.png" alt="yoshi" class="img-thumbnail" />
+            </div>
+            <div class="col">
+              <p>Fonction</p>
+              <p>Département</p>
+              <p>Email</p>
+              <p>Téléphone</p>
+            </div>
+            <div class="col">
+              <p>Manager</p>
+              <p>Informatique</p>
+              <p>cde@pantheon.com</p>
+              <p>0476231203</p>
+            </div>
+          </div>
+          <!-- Ligne bouton editer -->
+          <div class="row">
+            <div class="col text-right">
+              <button>Editer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Fin du container -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
